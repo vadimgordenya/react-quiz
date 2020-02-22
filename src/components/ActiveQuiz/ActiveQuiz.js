@@ -12,6 +12,7 @@ const ActiveQuiz = props => (
         <span>{props.answerNumber} из {props.quizLength}</span>
         </p>
         <AnswersList 
+            answerState={props.answerState}
             answers={props.answers}
             onAnswerClick={props.onAnswerClick}
         />
